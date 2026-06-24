@@ -1,0 +1,9 @@
+# .gitignore
+venv/
+.env
+__pycache__/
+.pytest_cache/
+.allure/
+allure-results/
+.DS_Store
+*.log
