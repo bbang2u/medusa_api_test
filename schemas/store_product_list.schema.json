@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "StoreProductListResponse",
+  "type": "object",
+  "required": ["products", "count", "offset", "limit"],
+  "properties": {
+    "limit":  { "type": "number" },
+    "offset": { "type": "number" },
+    "count":  { "type": "number" },
+    "products": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "created_at", "updated_at"],
+        "properties": {
+        "id":     { "type": "string" },
+        "title":  { "type": "string" },
+        "status": { "type": "string", "enum": ["draft", "proposed", "published", "rejected"] },
+        "created_at": { "type": "string", "format": "date-time" },
+        "updated_at": { "type": "string", "format": "date-time" }
+        }
+      }
+    }
+  }
+}

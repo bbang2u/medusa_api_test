@@ -15,5 +15,7 @@ pytest==9.1.1
 python-dotenv==1.2.2
 referencing==0.37.0
 requests==2.34.2
+rfc3339-validator==0.1.4
 rpds-py==2026.5.1
+six==1.17.0
 urllib3==2.7.0
