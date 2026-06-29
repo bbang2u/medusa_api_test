@@ -22,7 +22,9 @@ class StoreClient(BaseClient):
     def get_products(self, query_params=None):
         """상품 목록 조회"""
         return self._request("GET", "/store/products", params=query_params)
-
+    def get_product(self, product_id):
+        """단건 상품 조회 (없는 ID면 404 — 네거티브 테스트용)"""
+        return self._request("GET", f"/store/products/{product_id}")
     def create_cart(self):
         """장바구니 생성"""
         return self._request("POST", "/store/carts")

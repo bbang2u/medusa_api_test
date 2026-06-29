@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MedusaErrorResponse",
+  "type": "object",
+  "required": ["type", "message"],
+  "properties": {
+    "type":    { "type": "string" },
+    "message": { "type": "string" }
+  }
+}
